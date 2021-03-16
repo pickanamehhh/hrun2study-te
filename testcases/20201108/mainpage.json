@@ -1,0 +1,28 @@
+{
+    "config": {
+        "name": "testcase description",
+        "variables": {}
+    },
+    "teststeps": [
+        {
+            "name": "/",
+            "request": {
+                "url": "http://www.hnxmxit.com/",
+                "method": "GET",
+                "headers": {
+                    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36",
+                    "If-None-Match": "\"e2216e-e12b-5b36be3c1f0dc\"",
+                    "If-Modified-Since": "Fri, 06 Nov 2020 08:20:47 GMT"
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        304
+                    ]
+                }
+            ]
+        }
+    ]
+}

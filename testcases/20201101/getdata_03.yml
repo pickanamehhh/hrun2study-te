@@ -1,0 +1,17 @@
+# 获取响应数据3 (响应正文(json) )
+
+- config:
+    name: 验证 获取公众号已创建的标签
+    base_url: https://api.weixin.qq.com
+
+- test:
+    name: 调用获取公众号已创建的标签接口
+    request:
+      url: /cgi-bin/tags/get
+      method: GET
+      params:
+        access_token: 38_wJYRhYrJSg_TamYU7a5UXhxg4hGVjtJ9vo-Cs1cxTZ7p76TLbTUu3XPECMNmmeQOML4nIC9uGckXZGd0-S2FOjnd_CPMoTRdyfLl7TcsD30cWlLp91XiKHRmwre4LXq0CAohrpaIR5lSd67PANMjAHALYX
+    extract:
+      bname: content.tags.44.name  # content 表示json根 遇到数组也用.
+    validate:
+      - eq: [$bname,'newdreamP3']

@@ -1,0 +1,17 @@
+config:
+    name: testcase description
+    variables: {}
+teststeps:
+-   name: /
+    request:
+        headers:
+            If-Modified-Since: Fri, 06 Nov 2020 08:20:47 GMT
+            If-None-Match: '"e2216e-e12b-5b36be3c1f0dc"'
+            User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36
+                (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36
+        method: GET
+        url: http://www.hnxmxit.com/
+    validate:
+    -   eq:
+        - status_code
+        - 304

@@ -1,0 +1,173 @@
+{
+    "project_mapping":{
+        "env":{
+            "BASE_URL":"https://www.baidu.com"
+        },
+        "PWD":"/Users/liuqingjun/PycharmProjects/httprunner_p3p4_demo",
+        "functions":{
+            "get_search_word":"<function get_search_word at 0x7ffa40858a70>",
+            "s":"<function s at 0x7ffa40fbec20>",
+            "t":"<function t at 0x7ffa40fbeb90>",
+            "s1":"<function s1 at 0x7ffa4086e710>",
+            "t1":"<function t1 at 0x7ffa40fdcb00>",
+            "get_true":"<function get_true at 0x7ffa40fe5e60>",
+            "get_access_token":"<function get_access_token at 0x7ffa4112eb00>",
+            "get_params01":"<function get_params01 at 0x7ffa4112e8c0>",
+            "get_params02":"<function get_params02 at 0x7ffa4112ea70>",
+            "get_random_int":"<function get_random_int at 0x7ffa41160c20>",
+            "get_random_string":"<function get_random_string at 0x7ffa41169d40>",
+            "get_random_phonenum":"<function get_random_phonenum at 0x7ffa41169dd0>",
+            "get_random_name":"<function get_random_name at 0x7ffa41169e60>",
+            "get_params_by_mysql":"<function get_params_by_mysql at 0x7ffa41169ef0>",
+            "to_ISO_8859_1":"<function to_ISO_8859_1 at 0x7ffa41169f80>",
+            "to_UTF_8":"<function to_UTF_8 at 0x7ffa4116a050>"
+        },
+        "test_path":"/Users/liuqingjun/PycharmProjects/httprunner_p3p4_demo/testsuites/testsuite_demo_07.yml"
+    },
+    "testsuites":[
+        {
+            "config":{
+                "name":"testsuite_demo_07"
+            },
+            "testcases":{
+                "test_baidu_search01":{
+                    "testcase":"testcases/20201111/test_baidu_search.yml",
+                    "variables":{
+                        "search_word":[
+                            "12306"
+                        ]
+                    },
+                    "testcase_def":{
+                        "config":{
+                            "name":"验证百度搜索功能",
+                            "base_url":"${ENV(BASE_URL)}",
+                            "export":[
+                                "title"
+                            ]
+                        },
+                        "teststeps":[
+                            {
+                                "name":"exec baidu search api",
+                                "request":{
+                                    "method":"GET",
+                                    "url":"/s",
+                                    "params":{
+                                        "wd":"$search_word"
+                                    },
+                                    "headers":{
+                                        "User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36",
+                                        "accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+                                    }
+                                },
+                                "extract":{
+                                    "title":"<title>(.+?)</title>"
+                                },
+                                "validate":[
+                                    {
+                                        "eq":[
+                                            "status_code",
+                                            200
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "name":"test_baidu_search01"
+                },
+                "test_baidu_search02":{
+                    "testcase":"testcases/20201111/test_baidu_search.yml",
+                    "variables":{
+                        "search_word":[
+                            "李琴"
+                        ]
+                    },
+                    "testcase_def":{
+                        "config":{
+                            "name":"验证百度搜索功能",
+                            "base_url":"${ENV(BASE_URL)}",
+                            "export":[
+                                "title"
+                            ]
+                        },
+                        "teststeps":[
+                            {
+                                "name":"exec baidu search api",
+                                "request":{
+                                    "method":"GET",
+                                    "url":"/s",
+                                    "params":{
+                                        "wd":"$search_word"
+                                    },
+                                    "headers":{
+                                        "User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36",
+                                        "accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+                                    }
+                                },
+                                "extract":{
+                                    "title":"<title>(.+?)</title>"
+                                },
+                                "validate":[
+                                    {
+                                        "eq":[
+                                            "status_code",
+                                            200
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "name":"test_baidu_search02"
+                },
+                "test_baidu_search03":{
+                    "testcase":"testcases/20201111/test_baidu_search.yml",
+                    "variables":{
+                        "search_word":[
+                            "邓瑜"
+                        ]
+                    },
+                    "testcase_def":{
+                        "config":{
+                            "name":"验证百度搜索功能",
+                            "base_url":"${ENV(BASE_URL)}",
+                            "export":[
+                                "title"
+                            ]
+                        },
+                        "teststeps":[
+                            {
+                                "name":"exec baidu search api",
+                                "request":{
+                                    "method":"GET",
+                                    "url":"/s",
+                                    "params":{
+                                        "wd":"$search_word"
+                                    },
+                                    "headers":{
+                                        "User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36",
+                                        "accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+                                    }
+                                },
+                                "extract":{
+                                    "title":"<title>(.+?)</title>"
+                                },
+                                "validate":[
+                                    {
+                                        "eq":[
+                                            "status_code",
+                                            200
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "name":"test_baidu_search03"
+                }
+            },
+            "path":"./testsuites/testsuite_demo_07.yml",
+            "type":"testsuite"
+        }
+    ]
+}

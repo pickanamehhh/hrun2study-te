@@ -1,0 +1,8 @@
+config:
+  name: 注册参数化操作
+
+testcases:
+  phpwind_operator02:
+    testcase: testcases/20201115/phpwind_operator02.yml
+    parameters:
+      username-email: [['p3p40003','p3p40003@qq.com'],['p3p40004','p3p40004@qq.com'],['p3p40005','p3p40005@qq.com']]

@@ -1,0 +1,17 @@
+- config:
+    name: 测试创建标签接口
+    base_url: https://api.weixin.qq.com
+    variables:
+      - token: ${get_access_token()}
+
+- test:
+    name: 调用 创建标签 接口
+    skipUnless: $token
+    request:
+      url: /cgi-bin/tags/create
+      method: POST
+      params:
+        access_token: $token
+      json: { "tag" : { "name" : "new1_p3p4" } }
+    validate:
+      - eq: ['status_code',200]

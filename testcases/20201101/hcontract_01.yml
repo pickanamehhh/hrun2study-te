@@ -1,0 +1,30 @@
+# 关联 上一个接口的返回值（截取的部分值）作为下一个接口的参数
+- config:
+    name: 标签查询用例
+    base_url: https://api.weixin.qq.com
+
+- test:
+    name: 获取token_id
+    request:
+      method: GET
+      url: /cgi-bin/token
+      params:
+        grant_type: client_credential
+        appid: wx55614004f367f8ca
+        secret: 65515b46dd758dfdb09420bb7db2c67f
+    extract:
+      token_id: content.access_token
+    validate:
+      - eq: ['status_code',200]
+
+- test:
+    name: 获取公众号已创建的标签
+    request:
+      method: GET
+      url: /cgi-bin/tags/get
+      params:
+        access_token: $token_id
+    extract:
+      bname: content.tags.44.name
+    validate:
+      - eq: [$bname,'newdreamP3']

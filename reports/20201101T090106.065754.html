@@ -1,0 +1,3312 @@
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> - TestReport</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      color: #333;
+      margin: 0 auto;
+      width: 960px;
+    }
+    #summary {
+      width: 960px;
+      margin-bottom: 20px;
+    }
+    #summary th {
+      background-color: skyblue;
+      padding: 5px 12px;
+    }
+    #summary td {
+      background-color: lightblue;
+      text-align: center;
+      padding: 4px 8px;
+    }
+    .details {
+      width: 960px;
+      margin-bottom: 20px;
+    }
+    .details th {
+      background-color: skyblue;
+      padding: 5px 12px;
+    }
+    .details tr .passed {
+      background-color: lightgreen;
+    }
+    .details tr .failed {
+      background-color: red;
+    }
+    .details tr .unchecked {
+      background-color: gray;
+    }
+    .details td {
+      background-color: lightblue;
+      padding: 5px 12px;
+    }
+    .details .detail {
+      background-color: lightgrey;
+      font-size: smaller;
+      padding: 5px 10px;
+      line-height: 20px;
+      text-align: left;
+    }
+    .details .success {
+      background-color: greenyellow;
+    }
+    .details .error {
+      background-color: red;
+    }
+    .details .failure {
+      background-color: salmon;
+    }
+    .details .skipped {
+      background-color: gray;
+    }
+
+    .button {
+      font-size: 1em;
+      padding: 6px;
+      width: 4em;
+      text-align: center;
+      background-color: #06d85f;
+      border-radius: 20px/50px;
+      cursor: pointer;
+      transition: all 0.3s ease-out;
+    }
+    a.button{
+      color: gray;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .button:hover {
+      background: #2cffbd;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.7);
+      transition: opacity 500ms;
+      visibility: hidden;
+      opacity: 0;
+      line-height: 25px;
+    }
+    .overlay:target {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .popup {
+      margin: 70px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      width: 50%;
+      position: relative;
+      transition: all 3s ease-in-out;
+    }
+
+    .popup h2 {
+      margin-top: 0;
+      color: #333;
+      font-family: Tahoma, Arial, sans-serif;
+    }
+    .popup .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      transition: all 200ms;
+      font-size: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #333;
+    }
+    .popup .close:hover {
+      color: #06d85f;
+    }
+    .popup .content {
+      max-height: 80%;
+      overflow: auto;
+      text-align: left;
+    }
+    .popup .separator {
+      color:royalblue
+    }
+
+    @media screen and (max-width: 700px) {
+      .box {
+        width: 70%;
+      }
+      .popup {
+        width: 70%;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1>Test Report: </h1>
+
+  <h2>Summary</h2>
+  <table id="summary">
+    <tr>
+      <th>START AT</th>
+      <td colspan="4">2020-11-01T09:01:06.065754</td>
+    </tr>
+    <tr>
+      <th>DURATION</th>
+      <td colspan="4">2.422 seconds</td>
+    </tr>
+    <tr>
+      <th>PLATFORM</th>
+      <td>HttpRunner 2.5.7 </td>
+      <td>CPython 3.7.5 </td>
+      <td colspan="2">Darwin-19.5.0-x86_64-i386-64bit</td>
+    </tr>
+    <tr>
+      <th>STAT</th>
+      <th colspan="2">TESTCASES (success/fail)</th>
+      <th colspan="2">TESTSTEPS (success/fail/error/skip)</th>
+    </tr>
+    <tr>
+      <td>total (details) =></td>
+      <td colspan="2">10 (8/2)</td>
+      <td colspan="2">11 (9/2/0/0)</td>
+    </tr>
+  </table>
+
+  <h2>Details</h2>
+
+  
+  
+  <h3>标签查询用例</h3>
+  <table id="suite_1" class="details">
+    <tr>
+      <td>TOTAL: 2</td>
+      <td>SUCCESS: 1</td>
+      <td>FAILED: 1</td>
+      <td>ERROR: 0</td>
+      <td>SKIPPED: 0</td>
+    </tr>
+    <tr>
+      <th>Status</th>
+      <th colspan="2">Name</th>
+      <th>Response Time</th>
+      <th>Detail</th>
+    </tr>
+
+    
+    
+    
+    <tr id="record_1_1">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">获取token_id</td>
+      <td style="text-align:center;width:6em;">284.73 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_1_1">log-1</a>
+        <div id="popup_log_1_1_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_1_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: 获取token_id</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                            https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wx55614004f367f8ca&secret=65515b46dd758dfdb09420bb7db2c67f
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                            GET
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                            <pre>{
+  &#34;User-Agent&#34;: &#34;python-requests/2.24.0&#34;,
+  &#34;Accept-Encoding&#34;: &#34;gzip, deflate&#34;,
+  &#34;Accept&#34;: &#34;*/*&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;
+}</pre>
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wx55614004f367f8ca&secret=65515b46dd758dfdb09420bb7db2c67f
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            None
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            <pre>{
+  &#34;Connection&#34;: &#34;keep-alive&#34;,
+  &#34;Content-Type&#34;: &#34;application/json; encoding=utf-8&#34;,
+  &#34;Date&#34;: &#34;Sun, 01 Nov 2020 09:01:07 GMT&#34;,
+  &#34;Content-Length&#34;: &#34;194&#34;
+}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json; encoding=utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>body</th>
+                        <td>
+                          
+                            
+                              <pre>{
+  &#34;access_token&#34;: &#34;38_afvwXxPunZyLJ-hIr9CnlVi5WTpZZUXjt0Bv_qc0U2-a7S5PQ_0d-z-IlR9HPxVcoQiDzTgwuKgJcVA7C4NdxWabuaCL9E-CXjOh94zsTtzOBjclwYkWjTF2AdWjbkpwD9cOBzCcAMuVP0oTKEDdAEANHG&#34;,
+  &#34;expires_in&#34;: 7200
+}</pre>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+                <div style="overflow: auto">
+                
+                
+                <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                </table>
+                
+
+                
+                
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>194</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>284.73</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>282.437</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_2">
+      <th class="failure" style="width:5em;">failure</th>
+      <td colspan="2">获取公众号已创建的标签</td>
+      <td style="text-align:center;width:6em;">185.54 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_2_1">log-1</a>
+        <div id="popup_log_1_2_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_2_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: 获取公众号已创建的标签</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                            https://api.weixin.qq.com/cgi-bin/tags/get?access_token=38_afvwXxPunZyLJ-hIr9CnlVi5WTpZZUXjt0Bv_qc0U2-a7S5PQ_0d-z-IlR9HPxVcoQiDzTgwuKgJcVA7C4NdxWabuaCL9E-CXjOh94zsTtzOBjclwYkWjTF2AdWjbkpwD9cOBzCcAMuVP0oTKEDdAEANHG
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                            GET
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                            <pre>{
+  &#34;User-Agent&#34;: &#34;python-requests/2.24.0&#34;,
+  &#34;Accept-Encoding&#34;: &#34;gzip, deflate&#34;,
+  &#34;Accept&#34;: &#34;*/*&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;
+}</pre>
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            https://api.weixin.qq.com/cgi-bin/tags/get?access_token=38_afvwXxPunZyLJ-hIr9CnlVi5WTpZZUXjt0Bv_qc0U2-a7S5PQ_0d-z-IlR9HPxVcoQiDzTgwuKgJcVA7C4NdxWabuaCL9E-CXjOh94zsTtzOBjclwYkWjTF2AdWjbkpwD9cOBzCcAMuVP0oTKEDdAEANHG
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            None
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            <pre>{
+  &#34;Connection&#34;: &#34;keep-alive&#34;,
+  &#34;Content-Type&#34;: &#34;application/json; encoding=utf-8&#34;,
+  &#34;Date&#34;: &#34;Sun, 01 Nov 2020 09:01:07 GMT&#34;,
+  &#34;Content-Encoding&#34;: &#34;gzip&#34;,
+  &#34;Content-Length&#34;: &#34;676&#34;
+}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json; encoding=utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>body</th>
+                        <td>
+                          
+                            
+                              <pre>{
+  &#34;tags&#34;: [
+    {
+      &#34;id&#34;: 2,
+      &#34;name&#34;: &#34;星标组&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 376,
+      &#34;name&#34;: &#34;11&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 377,
+      &#34;name&#34;: &#34;长沙五一新干线&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 378,
+      &#34;name&#34;: &#34;长沙步行街&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 379,
+      &#34;name&#34;: &#34;T127129&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 380,
+      &#34;name&#34;: &#34;T127130&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 381,
+      &#34;name&#34;: &#34;T127131&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 383,
+      &#34;name&#34;: &#34;YU&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 384,
+      &#34;name&#34;: &#34;???&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 385,
+      &#34;name&#34;: &#34;衡阳市&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 395,
+      &#34;name&#34;: &#34;\\u521866888&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 407,
+      &#34;name&#34;: &#34;衡东1423&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 410,
+      &#34;name&#34;: &#34;经经&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 411,
+      &#34;name&#34;: &#34;runpsoxrbuewheduheswunalxqyjkg&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 412,
+      &#34;name&#34;: &#34;育曾&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 511,
+      &#34;name&#34;: &#34;\\u8861\\u4e1c8888&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 512,
+      &#34;name&#34;: &#34;\\u8861\\u4e1c8889&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 513,
+      &#34;name&#34;: &#34;hhh0001&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 514,
+      &#34;name&#34;: &#34;testP1P202&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 517,
+      &#34;name&#34;: &#34;广东&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 519,
+      &#34;name&#34;: &#34;衡东024&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 524,
+      &#34;name&#34;: &#34;祝融峰&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 529,
+      &#34;name&#34;: &#34;衡东025&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 530,
+      &#34;name&#34;: &#34;衡东026&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 535,
+      &#34;name&#34;: &#34;石湾01&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 536,
+      &#34;name&#34;: &#34;testP1P207&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 556,
+      &#34;name&#34;: &#34;happyhappyhappyend&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 558,
+      &#34;name&#34;: &#34;happyhapappyend01&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 561,
+      &#34;name&#34;: &#34;happyhapappyend04&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 563,
+      &#34;name&#34;: &#34;wkkdU14ce&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 601,
+      &#34;name&#34;: &#34;newdreamP1002&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 607,
+      &#34;name&#34;: &#34;中国&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 608,
+      &#34;name&#34;: &#34;上海&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 609,
+      &#34;name&#34;: &#34;湖南&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 612,
+      &#34;name&#34;: &#34;T1370101&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 613,
+      &#34;name&#34;: &#34;T13701&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 614,
+      &#34;name&#34;: &#34;??0101&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 620,
+      &#34;name&#34;: &#34;???001&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 621,
+      &#34;name&#34;: &#34;zzzzzzzz&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 624,
+      &#34;name&#34;: &#34;周孟雄044&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 634,
+      &#34;name&#34;: &#34;甘肃省&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 637,
+      &#34;name&#34;: &#34;广东不&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 666,
+      &#34;name&#34;: &#34;\\u4e91P3P9&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 667,
+      &#34;name&#34;: &#34;云P3P9&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 668,
+      &#34;name&#34;: &#34;newdreamP3P9&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 669,
+      &#34;name&#34;: &#34;梦想P3&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 670,
+      &#34;name&#34;: &#34;newdreamP3P4&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 671,
+      &#34;name&#34;: &#34;\\u4e91\\u5357P3P4&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 672,
+      &#34;name&#34;: &#34;云南P3P4&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 673,
+      &#34;name&#34;: &#34;？？？&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 674,
+      &#34;name&#34;: &#34;2&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 675,
+      &#34;name&#34;: &#34;555888&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 676,
+      &#34;name&#34;: &#34;55588&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 677,
+      &#34;name&#34;: &#34;5558&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 678,
+      &#34;name&#34;: &#34;555&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 679,
+      &#34;name&#34;: &#34;abc&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 680,
+      &#34;name&#34;: &#34;999&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 681,
+      &#34;name&#34;: &#34;南P4&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 682,
+      &#34;name&#34;: &#34;广东浪子&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 683,
+      &#34;name&#34;: &#34;newdream_p3p4&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 684,
+      &#34;name&#34;: &#34;guangzhouren&#34;,
+      &#34;count&#34;: 0
+    },
+    {
+      &#34;id&#34;: 685,
+      &#34;name&#34;: &#34;guangzhoup3p4&#34;,
+      &#34;count&#34;: 0
+    }
+  ]
+}</pre>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+                <div style="overflow: auto">
+                
+                
+                <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="failed">
+                      
+                        LazyString($bname)
+                      </td>
+                      <td>equals</td>
+                      <td>newdreamP3</td>
+                      <td>newdreamP3P9</td>
+                    </tr>
+                    
+                </table>
+                
+
+                
+                
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>2512</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>185.54</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>183.382</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+          <a class="button" href="#popup_attachment_1_2">traceback</a>
+          <div id="popup_attachment_1_2" class="overlay">
+            <div class="popup">
+              <h2>Traceback Message</h2>
+              <a class="close" href="#record_1_2">&times;</a>
+              <div class="content"><pre>Traceback (most recent call last):
+  File &#34;/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/httprunner/api.py&#34;, line 63, in test
+    test_runner.run_test(test_dict)
+httprunner.exceptions.ValidationFailure: 
+validate: LazyString($bname) equals newdreamP3(str)	==&gt; fail
+newdreamP3P9(str) equals newdreamP3(str)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &#34;/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/httprunner/api.py&#34;, line 65, in test
+    self.fail(str(ex))
+AssertionError: 
+validate: LazyString($bname) equals newdreamP3(str)	==&gt; fail
+newdreamP3P9(str) equals newdreamP3(str)
+</pre></div>
+            </div>
+          </div>
+        
+
+      </td>
+    </tr>
+  
+  </table>
+  
+  
+  <h3>验证 获取公众号已创建的标签</h3>
+  <table id="suite_2" class="details">
+    <tr>
+      <td>TOTAL: 1</td>
+      <td>SUCCESS: 0</td>
+      <td>FAILED: 1</td>
+      <td>ERROR: 0</td>
+      <td>SKIPPED: 0</td>
+    </tr>
+    <tr>
+      <th>Status</th>
+      <th colspan="2">Name</th>
+      <th>Response Time</th>
+      <th>Detail</th>
+    </tr>
+
+    
+    
+    
+    <tr id="record_2_1">
+      <th class="failure" style="width:5em;">failure</th>
+      <td colspan="2">调用获取公众号已创建的标签接口</td>
+      <td style="text-align:center;width:6em;">248.28 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_2_1_1">log-1</a>
+        <div id="popup_log_2_1_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_2_1_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: 调用获取公众号已创建的标签接口</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                            https://api.weixin.qq.com/cgi-bin/tags/get?access_token=38_wJYRhYrJSg_TamYU7a5UXhxg4hGVjtJ9vo-Cs1cxTZ7p76TLbTUu3XPECMNmmeQOML4nIC9uGckXZGd0-S2FOjnd_CPMoTRdyfLl7TcsD30cWlLp91XiKHRmwre4LXq0CAohrpaIR5lSd67PANMjAHALYX
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                            GET
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                            <pre>{
+  &#34;User-Agent&#34;: &#34;python-requests/2.24.0&#34;,
+  &#34;Accept-Encoding&#34;: &#34;gzip, deflate&#34;,
+  &#34;Accept&#34;: &#34;*/*&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;
+}</pre>
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            https://api.weixin.qq.com/cgi-bin/tags/get?access_token=38_wJYRhYrJSg_TamYU7a5UXhxg4hGVjtJ9vo-Cs1cxTZ7p76TLbTUu3XPECMNmmeQOML4nIC9uGckXZGd0-S2FOjnd_CPMoTRdyfLl7TcsD30cWlLp91XiKHRmwre4LXq0CAohrpaIR5lSd67PANMjAHALYX
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            None
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            <pre>{
+  &#34;Connection&#34;: &#34;keep-alive&#34;,
+  &#34;Date&#34;: &#34;Sun, 01 Nov 2020 09:01:06 GMT&#34;,
+  &#34;Content-Type&#34;: &#34;application/json; encoding=utf-8&#34;,
+  &#34;RetKey&#34;: &#34;11&#34;,
+  &#34;LogicRet&#34;: &#34;40001&#34;,
+  &#34;Content-Length&#34;: &#34;118&#34;
+}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json; encoding=utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>body</th>
+                        <td>
+                          
+                            
+                              <pre>{
+  &#34;errcode&#34;: 40001,
+  &#34;errmsg&#34;: &#34;invalid credential, access_token is invalid or not latest rid: 5f9e7952-760c7b4b-75311a99&#34;
+}</pre>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+                <div style="overflow: auto">
+                
+                
+
+                
+                
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>118</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>248.28</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>245.574</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+          <a class="button" href="#popup_attachment_2_1">traceback</a>
+          <div id="popup_attachment_2_1" class="overlay">
+            <div class="popup">
+              <h2>Traceback Message</h2>
+              <a class="close" href="#record_2_1">&times;</a>
+              <div class="content"><pre>Traceback (most recent call last):
+  File &#34;/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/httprunner/api.py&#34;, line 63, in test
+    test_runner.run_test(test_dict)
+httprunner.exceptions.ExtractFailure: Failed to extract! =&gt; tags.44.name
+response body: {&#39;errcode&#39;: 40001, &#39;errmsg&#39;: &#39;invalid credential, access_token is invalid or not latest rid: 5f9e7952-760c7b4b-75311a99&#39;}
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &#34;/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/httprunner/api.py&#34;, line 65, in test
+    self.fail(str(ex))
+AssertionError: Failed to extract! =&gt; tags.44.name
+response body: {&#39;errcode&#39;: 40001, &#39;errmsg&#39;: &#39;invalid credential, access_token is invalid or not latest rid: 5f9e7952-760c7b4b-75311a99&#39;}
+
+</pre></div>
+            </div>
+          </div>
+        
+
+      </td>
+    </tr>
+  
+  </table>
+  
+  
+  <h3>验证能否打开湖南新梦想主页</h3>
+  <table id="suite_3" class="details">
+    <tr>
+      <td>TOTAL: 1</td>
+      <td>SUCCESS: 1</td>
+      <td>FAILED: 0</td>
+      <td>ERROR: 0</td>
+      <td>SKIPPED: 0</td>
+    </tr>
+    <tr>
+      <th>Status</th>
+      <th colspan="2">Name</th>
+      <th>Response Time</th>
+      <th>Detail</th>
+    </tr>
+
+    
+    
+    
+    <tr id="record_3_1">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">接口名称 湖南新梦想主页接口</td>
+      <td style="text-align:center;width:6em;">97.76 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_3_1_1">log-1</a>
+        <div id="popup_log_3_1_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_3_1_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: 接口名称 湖南新梦想主页接口</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                            http://www.hnxmxit.com/
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                            GET
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                            <pre>{
+  &#34;User-Agent&#34;: &#34;python-requests/2.24.0&#34;,
+  &#34;Accept-Encoding&#34;: &#34;gzip, deflate&#34;,
+  &#34;Accept&#34;: &#34;*/*&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;
+}</pre>
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://www.hnxmxit.com/
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            ISO-8859-1
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            <pre>{
+  &#34;Date&#34;: &#34;Sun, 01 Nov 2020 09:01:05 GMT&#34;,
+  &#34;Server&#34;: &#34;Apache&#34;,
+  &#34;Last-Modified&#34;: &#34;Fri, 30 Oct 2020 07:53:23 GMT&#34;,
+  &#34;ETag&#34;: &#34;\&#34;e2216e-e13a-5b2deb0e4e904\&#34;&#34;,
+  &#34;Accept-Ranges&#34;: &#34;bytes&#34;,
+  &#34;Vary&#34;: &#34;Accept-Encoding&#34;,
+  &#34;Content-Encoding&#34;: &#34;gzip&#34;,
+  &#34;Content-Length&#34;: &#34;13148&#34;,
+  &#34;Keep-Alive&#34;: &#34;timeout=5, max=100&#34;,
+  &#34;Connection&#34;: &#34;Keep-Alive&#34;,
+  &#34;Content-Type&#34;: &#34;text/html&#34;
+}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            text/html
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>body</th>
+                        <td>
+                          
+                            
+                              <pre>&lt;!DOCTYPE html&gt;&lt;html lang=&#34;en&#34;&gt;&lt;head&gt;&lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34; /&gt;&lt;meta property=&#34;qc:admins&#34; content=&#34;07303643462122363757&#34; /&gt;&lt;meta name=&#34;robots&#34; content=&#34;index, follow&#34; /&gt;&lt;meta name=&#34;keywords&#34; content=&#34; æ°æ¢¦æ³,æ°æ¢¦æ³IT,æ°æ¢¦æ³ITæè²,æ°æ¢¦æ³ITæè²å¹è®­,é¿æ²æ°æ¢¦æ³IT,è½¯ä»¶æµè¯å¹è®­,é¿æ²è½¯ä»¶æµè¯å¹è®­,é¿æ²javaå¹è®­,é¿æ²Pythonå¹è®­,é¿æ²ITå¹è®­,é¿æ²ITå¹è®­æºæ&#34; /&gt;&lt;meta name=&#34;description&#34; content=&#34;æ°æ¢¦æ³ITèä¸æè²ï¼æ¯é¿æ ... OMITTED 57146 CHARACTORS ...</pre>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+                <div style="overflow: auto">
+                
+                
+                <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        LazyString($code)
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        LazyString($info)
+                      </td>
+                      <td>equals</td>
+                      <td>OK</td>
+                      <td>OK</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        LazyString($header_con)
+                      </td>
+                      <td>equals</td>
+                      <td>text/html</td>
+                      <td>text/html</td>
+                    </tr>
+                    
+                </table>
+                
+
+                
+                
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>57658</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>97.76</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>91.172</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+  </table>
+  
+  
+  <h3>验证能否打开湖南新梦想主页</h3>
+  <table id="suite_4" class="details">
+    <tr>
+      <td>TOTAL: 1</td>
+      <td>SUCCESS: 1</td>
+      <td>FAILED: 0</td>
+      <td>ERROR: 0</td>
+      <td>SKIPPED: 0</td>
+    </tr>
+    <tr>
+      <th>Status</th>
+      <th colspan="2">Name</th>
+      <th>Response Time</th>
+      <th>Detail</th>
+    </tr>
+
+    
+    
+    
+    <tr id="record_4_1">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">接口名称 湖南新梦想主页接口</td>
+      <td style="text-align:center;width:6em;">186.40 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_4_1_1">log-1</a>
+        <div id="popup_log_4_1_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_4_1_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: 接口名称 湖南新梦想主页接口</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                            https://www.baidu.com/
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                            GET
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                            <pre>{
+  &#34;User-Agent&#34;: &#34;python-requests/2.24.0&#34;,
+  &#34;Accept-Encoding&#34;: &#34;gzip, deflate&#34;,
+  &#34;Accept&#34;: &#34;*/*&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;
+}</pre>
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            https://www.baidu.com/
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {'BDORZ': '27315'}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            ISO-8859-1
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            <pre>{
+  &#34;Cache-Control&#34;: &#34;private, no-cache, no-store, proxy-revalidate, no-transform&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;,
+  &#34;Content-Encoding&#34;: &#34;gzip&#34;,
+  &#34;Content-Type&#34;: &#34;text/html&#34;,
+  &#34;Date&#34;: &#34;Sun, 01 Nov 2020 09:01:06 GMT&#34;,
+  &#34;Last-Modified&#34;: &#34;Mon, 23 Jan 2017 13:24:45 GMT&#34;,
+  &#34;Pragma&#34;: &#34;no-cache&#34;,
+  &#34;Server&#34;: &#34;bfe/1.0.8.18&#34;,
+  &#34;Set-Cookie&#34;: &#34;BDORZ=27315; max-age=86400; domain=.baidu.com; path=/&#34;,
+  &#34;Transfer-Encoding&#34;: &#34;chunked&#34;
+}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            text/html
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>body</th>
+                        <td>
+                          
+                            
+                              <pre>&lt;!DOCTYPE html&gt;
+&lt;!--STATUS OK--&gt;&lt;html&gt; &lt;head&gt;&lt;meta http-equiv=content-type content=text/html;charset=utf-8&gt;&lt;meta http-equiv=X-UA-Compatible content=IE=Edge&gt;&lt;meta content=always name=referrer&gt;&lt;link rel=stylesheet type=text/css href=https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/bdorz/baidu.min.css&gt;&lt;title&gt;ç¾åº¦ä¸ä¸ï¼ä½ å°±ç¥é&lt;/title&gt;&lt;/head&gt; &lt;body link=#0000cc&gt; &lt;div id=wrapper&gt; &lt;div id=head&gt; &lt;div class=head_wrapper&gt; &lt;div class=s_form&gt; &lt;div class=s_form_wrapper&gt; &lt;div id=lg&gt; &lt;img hidefocus=tru ... OMITTED 1931 CHARACTORS ...</pre>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+                <div style="overflow: auto">
+                
+                
+                <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        LazyString($v)
+                      </td>
+                      <td>equals</td>
+                      <td>tj_trnews</td>
+                      <td>tj_trnews</td>
+                    </tr>
+                    
+                </table>
+                
+
+                
+                
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>2443</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>186.4</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>183.07</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+  </table>
+  
+  
+  <h3>验证能否打开湖南新梦想主页</h3>
+  <table id="suite_5" class="details">
+    <tr>
+      <td>TOTAL: 1</td>
+      <td>SUCCESS: 1</td>
+      <td>FAILED: 0</td>
+      <td>ERROR: 0</td>
+      <td>SKIPPED: 0</td>
+    </tr>
+    <tr>
+      <th>Status</th>
+      <th colspan="2">Name</th>
+      <th>Response Time</th>
+      <th>Detail</th>
+    </tr>
+
+    
+    
+    
+    <tr id="record_5_1">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">接口名称 湖南新梦想主页接口</td>
+      <td style="text-align:center;width:6em;">58.64 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_5_1_1">log-1</a>
+        <div id="popup_log_5_1_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_5_1_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: 接口名称 湖南新梦想主页接口</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                            http://www.hnxmxit.com/
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                            GET
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                            <pre>{
+  &#34;User-Agent&#34;: &#34;python-requests/2.24.0&#34;,
+  &#34;Accept-Encoding&#34;: &#34;gzip, deflate&#34;,
+  &#34;Accept&#34;: &#34;*/*&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;
+}</pre>
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://www.hnxmxit.com/
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            ISO-8859-1
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            <pre>{
+  &#34;Date&#34;: &#34;Sun, 01 Nov 2020 09:01:05 GMT&#34;,
+  &#34;Server&#34;: &#34;Apache&#34;,
+  &#34;Last-Modified&#34;: &#34;Fri, 30 Oct 2020 07:53:23 GMT&#34;,
+  &#34;ETag&#34;: &#34;\&#34;e2216e-e13a-5b2deb0e4e904\&#34;&#34;,
+  &#34;Accept-Ranges&#34;: &#34;bytes&#34;,
+  &#34;Vary&#34;: &#34;Accept-Encoding&#34;,
+  &#34;Content-Encoding&#34;: &#34;gzip&#34;,
+  &#34;Content-Length&#34;: &#34;13148&#34;,
+  &#34;Keep-Alive&#34;: &#34;timeout=5, max=100&#34;,
+  &#34;Connection&#34;: &#34;Keep-Alive&#34;,
+  &#34;Content-Type&#34;: &#34;text/html&#34;
+}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            text/html
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>body</th>
+                        <td>
+                          
+                            
+                              <pre>&lt;!DOCTYPE html&gt;&lt;html lang=&#34;en&#34;&gt;&lt;head&gt;&lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34; /&gt;&lt;meta property=&#34;qc:admins&#34; content=&#34;07303643462122363757&#34; /&gt;&lt;meta name=&#34;robots&#34; content=&#34;index, follow&#34; /&gt;&lt;meta name=&#34;keywords&#34; content=&#34; æ°æ¢¦æ³,æ°æ¢¦æ³IT,æ°æ¢¦æ³ITæè²,æ°æ¢¦æ³ITæè²å¹è®­,é¿æ²æ°æ¢¦æ³IT,è½¯ä»¶æµè¯å¹è®­,é¿æ²è½¯ä»¶æµè¯å¹è®­,é¿æ²javaå¹è®­,é¿æ²Pythonå¹è®­,é¿æ²ITå¹è®­,é¿æ²ITå¹è®­æºæ&#34; /&gt;&lt;meta name=&#34;description&#34; content=&#34;æ°æ¢¦æ³ITèä¸æè²ï¼æ¯é¿æ ... OMITTED 57146 CHARACTORS ...</pre>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+                <div style="overflow: auto">
+                
+                
+                <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                </table>
+                
+
+                
+                
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>57658</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>58.64</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>56.736</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+  </table>
+  
+  
+  <h3>验证能否打开湖南新梦想主页</h3>
+  <table id="suite_6" class="details">
+    <tr>
+      <td>TOTAL: 1</td>
+      <td>SUCCESS: 1</td>
+      <td>FAILED: 0</td>
+      <td>ERROR: 0</td>
+      <td>SKIPPED: 0</td>
+    </tr>
+    <tr>
+      <th>Status</th>
+      <th colspan="2">Name</th>
+      <th>Response Time</th>
+      <th>Detail</th>
+    </tr>
+
+    
+    
+    
+    <tr id="record_6_1">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">接口名称 湖南新梦想主页接口</td>
+      <td style="text-align:center;width:6em;">76.88 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_6_1_1">log-1</a>
+        <div id="popup_log_6_1_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_6_1_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: 接口名称 湖南新梦想主页接口</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                            http://www.hnxmxit.com/
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                            GET
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                            <pre>{
+  &#34;User-Agent&#34;: &#34;python-requests/2.24.0&#34;,
+  &#34;Accept-Encoding&#34;: &#34;gzip, deflate&#34;,
+  &#34;Accept&#34;: &#34;*/*&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;
+}</pre>
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://www.hnxmxit.com/
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            ISO-8859-1
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            <pre>{
+  &#34;Date&#34;: &#34;Sun, 01 Nov 2020 09:01:05 GMT&#34;,
+  &#34;Server&#34;: &#34;Apache&#34;,
+  &#34;Last-Modified&#34;: &#34;Fri, 30 Oct 2020 07:53:23 GMT&#34;,
+  &#34;ETag&#34;: &#34;\&#34;e2216e-e13a-5b2deb0e4e904\&#34;&#34;,
+  &#34;Accept-Ranges&#34;: &#34;bytes&#34;,
+  &#34;Vary&#34;: &#34;Accept-Encoding&#34;,
+  &#34;Content-Encoding&#34;: &#34;gzip&#34;,
+  &#34;Content-Length&#34;: &#34;13148&#34;,
+  &#34;Keep-Alive&#34;: &#34;timeout=5, max=100&#34;,
+  &#34;Connection&#34;: &#34;Keep-Alive&#34;,
+  &#34;Content-Type&#34;: &#34;text/html&#34;
+}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            text/html
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>body</th>
+                        <td>
+                          
+                            
+                              <pre>&lt;!DOCTYPE html&gt;&lt;html lang=&#34;en&#34;&gt;&lt;head&gt;&lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34; /&gt;&lt;meta property=&#34;qc:admins&#34; content=&#34;07303643462122363757&#34; /&gt;&lt;meta name=&#34;robots&#34; content=&#34;index, follow&#34; /&gt;&lt;meta name=&#34;keywords&#34; content=&#34; æ°æ¢¦æ³,æ°æ¢¦æ³IT,æ°æ¢¦æ³ITæè²,æ°æ¢¦æ³ITæè²å¹è®­,é¿æ²æ°æ¢¦æ³IT,è½¯ä»¶æµè¯å¹è®­,é¿æ²è½¯ä»¶æµè¯å¹è®­,é¿æ²javaå¹è®­,é¿æ²Pythonå¹è®­,é¿æ²ITå¹è®­,é¿æ²ITå¹è®­æºæ&#34; /&gt;&lt;meta name=&#34;description&#34; content=&#34;æ°æ¢¦æ³ITèä¸æè²ï¼æ¯é¿æ ... OMITTED 57146 CHARACTORS ...</pre>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+                <div style="overflow: auto">
+                
+                
+                <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        LazyString($reason)
+                      </td>
+                      <td>equals</td>
+                      <td>OK</td>
+                      <td>OK</td>
+                    </tr>
+                    
+                </table>
+                
+
+                
+                
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>57658</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>76.88</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>74.236</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+  </table>
+  
+  
+  <h3>测试创建标签接口</h3>
+  <table id="suite_7" class="details">
+    <tr>
+      <td>TOTAL: 1</td>
+      <td>SUCCESS: 1</td>
+      <td>FAILED: 0</td>
+      <td>ERROR: 0</td>
+      <td>SKIPPED: 0</td>
+    </tr>
+    <tr>
+      <th>Status</th>
+      <th colspan="2">Name</th>
+      <th>Response Time</th>
+      <th>Detail</th>
+    </tr>
+
+    
+    
+    
+    <tr id="record_7_1">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">调用 创建标签 接口</td>
+      <td style="text-align:center;width:6em;">231.36 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_7_1_1">log-1</a>
+        <div id="popup_log_7_1_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_7_1_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: 调用 创建标签 接口</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                            https://api.weixin.qq.com/cgi-bin/tags/create?access_token=38_Dqz0xhgZ-eaa5vAz0ypSgW8vnBIM-t_D_yuNzDgALCK4i51N0SdjkC1xJt9-ymU7rRoP4tOfckTtxZMKQztQhz_7cmqv7U1QzMcRMwn3uJNhYqmz6vDVPPFnEvdKBX1f5liPRPFDcHdyXsEeDBZfAEANLJ
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                            POST
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                            <pre>{
+  &#34;User-Agent&#34;: &#34;python-requests/2.24.0&#34;,
+  &#34;Accept-Encoding&#34;: &#34;gzip, deflate&#34;,
+  &#34;Accept&#34;: &#34;*/*&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;,
+  &#34;Content-Length&#34;: &#34;34&#34;,
+  &#34;Content-Type&#34;: &#34;application/json&#34;
+}</pre>
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>body</th>
+                      <td>
+                        
+                            <pre>{
+  &#34;tag&#34;: {
+    &#34;name&#34;: &#34;newdream_p3p4&#34;
+  }
+}</pre>
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            https://api.weixin.qq.com/cgi-bin/tags/create?access_token=38_Dqz0xhgZ-eaa5vAz0ypSgW8vnBIM-t_D_yuNzDgALCK4i51N0SdjkC1xJt9-ymU7rRoP4tOfckTtxZMKQztQhz_7cmqv7U1QzMcRMwn3uJNhYqmz6vDVPPFnEvdKBX1f5liPRPFDcHdyXsEeDBZfAEANLJ
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            None
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            <pre>{
+  &#34;Connection&#34;: &#34;keep-alive&#34;,
+  &#34;Date&#34;: &#34;Sun, 01 Nov 2020 09:01:07 GMT&#34;,
+  &#34;Content-Type&#34;: &#34;application/json; encoding=utf-8&#34;,
+  &#34;RetKey&#34;: &#34;11&#34;,
+  &#34;LogicRet&#34;: &#34;42001&#34;,
+  &#34;Content-Length&#34;: &#34;81&#34;
+}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json; encoding=utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>body</th>
+                        <td>
+                          
+                            
+                              <pre>{
+  &#34;errcode&#34;: 42001,
+  &#34;errmsg&#34;: &#34;access_token expired rid: 5f9e7952-3e4ff97b-331f3bde&#34;
+}</pre>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+                <div style="overflow: auto">
+                
+                
+                <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                </table>
+                
+
+                
+                
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>81</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>231.36</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>226.967</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+  </table>
+  
+  
+  <h3>验证获取access_token接口</h3>
+  <table id="suite_8" class="details">
+    <tr>
+      <td>TOTAL: 1</td>
+      <td>SUCCESS: 1</td>
+      <td>FAILED: 0</td>
+      <td>ERROR: 0</td>
+      <td>SKIPPED: 0</td>
+    </tr>
+    <tr>
+      <th>Status</th>
+      <th colspan="2">Name</th>
+      <th>Response Time</th>
+      <th>Detail</th>
+    </tr>
+
+    
+    
+    
+    <tr id="record_8_1">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">调用 access_token 接口</td>
+      <td style="text-align:center;width:6em;">280.60 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_8_1_1">log-1</a>
+        <div id="popup_log_8_1_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_8_1_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: 调用 access_token 接口</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                            https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wx55614004f367f8ca&secret=65515b46dd758dfdb09420bb7db2c67f
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                            GET
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                            <pre>{
+  &#34;User-Agent&#34;: &#34;python-requests/2.24.0&#34;,
+  &#34;Accept-Encoding&#34;: &#34;gzip, deflate&#34;,
+  &#34;Accept&#34;: &#34;*/*&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;
+}</pre>
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wx55614004f367f8ca&secret=65515b46dd758dfdb09420bb7db2c67f
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            None
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            <pre>{
+  &#34;Connection&#34;: &#34;keep-alive&#34;,
+  &#34;Content-Type&#34;: &#34;application/json; encoding=utf-8&#34;,
+  &#34;Date&#34;: &#34;Sun, 01 Nov 2020 09:01:07 GMT&#34;,
+  &#34;Content-Length&#34;: &#34;194&#34;
+}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json; encoding=utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>body</th>
+                        <td>
+                          
+                            
+                              <pre>{
+  &#34;access_token&#34;: &#34;38_afvwXxPunZyLJ-hIr9CnlVi5WTpZZUXjt0Bv_qc0U2-a7S5PQ_0d-z-IlR9HPxVcoQiDzTgwuKgJcVA7C4NdxWabuaCL9E-CXjOh94zsTtzOBjclwYkWjTF2AdWjbkpwD9cOBzCcAMuVP0oTODRdAEACRF&#34;,
+  &#34;expires_in&#34;: 7200
+}</pre>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+                <div style="overflow: auto">
+                
+                
+                <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.expires_in
+                      </td>
+                      <td>equals</td>
+                      <td>7200</td>
+                      <td>7200</td>
+                    </tr>
+                    
+                </table>
+                
+
+                
+                
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>194</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>280.6</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>276.863</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+  </table>
+  
+  
+  <h3>验证百度搜索</h3>
+  <table id="suite_9" class="details">
+    <tr>
+      <td>TOTAL: 1</td>
+      <td>SUCCESS: 1</td>
+      <td>FAILED: 0</td>
+      <td>ERROR: 0</td>
+      <td>SKIPPED: 0</td>
+    </tr>
+    <tr>
+      <th>Status</th>
+      <th colspan="2">Name</th>
+      <th>Response Time</th>
+      <th>Detail</th>
+    </tr>
+
+    
+    
+    
+    <tr id="record_9_1">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">调用百度搜索接口</td>
+      <td style="text-align:center;width:6em;">422.33 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_9_1_1">log-1</a>
+        <div id="popup_log_9_1_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_9_1_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: 调用百度搜索接口</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                            https://www.baidu.com/s?wd=newdream
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                            GET
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                            <pre>{
+  &#34;User-Agent&#34;: &#34;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36&#34;,
+  &#34;Accept-Encoding&#34;: &#34;gzip, deflate&#34;,
+  &#34;accept&#34;: &#34;text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;
+}</pre>
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            https://www.baidu.com/s?wd=newdream
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {'BAIDUID': 'F27C41919E972A9A445496E934AF51B6:FG=1', 'BIDUPSID': 'F27C41919E972A9AEE1A747A0E04E004', 'H_PS_PSSID': '1432_32881_32943_31660_32972_7516_32115_32845', 'PSINO': '3', 'PSTM': '1604221268', 'delPer': '0', 'BDSVRTM': '20', 'BD_CK_SAM': '1'}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            <pre>{
+  &#34;Bdpagetype&#34;: &#34;3&#34;,
+  &#34;Bdqid&#34;: &#34;0xcac77b9800026c03&#34;,
+  &#34;Cache-Control&#34;: &#34;private&#34;,
+  &#34;Ckpacknum&#34;: &#34;2&#34;,
+  &#34;Ckrndstr&#34;: &#34;800026c03&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;,
+  &#34;Content-Encoding&#34;: &#34;gzip&#34;,
+  &#34;Content-Type&#34;: &#34;text/html;charset=utf-8&#34;,
+  &#34;Date&#34;: &#34;Sun, 01 Nov 2020 09:01:08 GMT&#34;,
+  &#34;P3p&#34;: &#34;CP=\&#34; OTI DSP COR IVA OUR IND COM \&#34;, CP=\&#34; OTI DSP COR IVA OUR IND COM \&#34;&#34;,
+  &#34;Server&#34;: &#34;BWS/1.1&#34;,
+  &#34;Set-Cookie&#34;: &#34;BAIDUID=F27C41919E972A9AEE1A747A0E04E004:FG=1; expires=Thu, 31-Dec-37 23:55:55 GMT; max-age=2147483647; path=/; domain=.baidu.com, BIDUPSID=F27C41919E972A9AEE1A747A0E04E004; expires=Thu, 31-Dec-37 23:55:55 GMT; max-age=2147483647; path=/; domain=.baidu.com, PSTM=1604221268; expires=Thu, 31-Dec-37 23:55:55 GMT; max-age=2147483647; path=/; domain=.baidu.com, BAIDUID=F27C41919E972A9A445496E934AF51B6:FG=1; max-age=31536000; expires=Mon, 01-Nov-21 09:01:08 GMT; domain=.baidu.com; path=/; version=1; comment=bd, delPer=0; path=/; domain=.baidu.com, BD_CK_SAM=1;path=/, PSINO=3; domain=.baidu.com; path=/, BDSVRTM=20; path=/, H_PS_PSSID=1432_32881_32943_31660_32972_7516_32115_32845; path=/; domain=.baidu.com&#34;,
+  &#34;Strict-Transport-Security&#34;: &#34;max-age=172800&#34;,
+  &#34;Traceid&#34;: &#34;1604221268026658765814611783408792267779&#34;,
+  &#34;Vary&#34;: &#34;Accept-Encoding&#34;,
+  &#34;X-Ua-Compatible&#34;: &#34;IE=Edge,chrome=1&#34;,
+  &#34;Transfer-Encoding&#34;: &#34;chunked&#34;
+}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            text/html;charset=utf-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>body</th>
+                        <td>
+                          
+                            
+                              <pre>&lt;!DOCTYPE html&gt;
+&lt;!--STATUS OK--&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+&lt;html&gt;
+	&lt;head&gt;
+		
+		&lt;meta http-equiv=&#34;X-UA-Compatible&#34; content=&#34;IE=edge,chrome=1&#34;&gt;
+		&lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html;charset=utf-8&#34;&gt;
+		&lt;meta content=&#34;always&#34; name=&#34;referrer&#34;&gt;
+        &lt;meta name=&#34;theme-color&#34; content=&#34;#2932e1&#34;&gt;
+        &lt;link rel=&#34;shortcut icon&#34; href=&#34;/favicon.ico&#34; type=&#34;image/x-icon&#34; /&gt;
+        ... OMITTED 320877 CHARACTORS ...</pre>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+                <div style="overflow: auto">
+                
+                
+
+                
+                
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>326218</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>422.33</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>209.623</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+  </table>
+  
+  
+  <h3>验证能否打开湖南新梦想主页</h3>
+  <table id="suite_10" class="details">
+    <tr>
+      <td>TOTAL: 1</td>
+      <td>SUCCESS: 1</td>
+      <td>FAILED: 0</td>
+      <td>ERROR: 0</td>
+      <td>SKIPPED: 0</td>
+    </tr>
+    <tr>
+      <th>Status</th>
+      <th colspan="2">Name</th>
+      <th>Response Time</th>
+      <th>Detail</th>
+    </tr>
+
+    
+    
+    
+    <tr id="record_10_1">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">接口名称 湖南新梦想主页接口</td>
+      <td style="text-align:center;width:6em;">134.21 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_10_1_1">log-1</a>
+        <div id="popup_log_10_1_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_10_1_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: 接口名称 湖南新梦想主页接口</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                            http://www.hnxmxit.com/
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                            GET
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                            <pre>{
+  &#34;User-Agent&#34;: &#34;python-requests/2.24.0&#34;,
+  &#34;Accept-Encoding&#34;: &#34;gzip, deflate&#34;,
+  &#34;Accept&#34;: &#34;*/*&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;
+}</pre>
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://www.hnxmxit.com/
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            ISO-8859-1
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            <pre>{
+  &#34;Date&#34;: &#34;Sun, 01 Nov 2020 09:01:07 GMT&#34;,
+  &#34;Server&#34;: &#34;Apache&#34;,
+  &#34;Last-Modified&#34;: &#34;Fri, 30 Oct 2020 07:53:23 GMT&#34;,
+  &#34;ETag&#34;: &#34;\&#34;e2216e-e13a-5b2deb0e4e904\&#34;&#34;,
+  &#34;Accept-Ranges&#34;: &#34;bytes&#34;,
+  &#34;Vary&#34;: &#34;Accept-Encoding&#34;,
+  &#34;Content-Encoding&#34;: &#34;gzip&#34;,
+  &#34;Content-Length&#34;: &#34;13148&#34;,
+  &#34;Keep-Alive&#34;: &#34;timeout=5, max=100&#34;,
+  &#34;Connection&#34;: &#34;Keep-Alive&#34;,
+  &#34;Content-Type&#34;: &#34;text/html&#34;
+}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            text/html
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>body</th>
+                        <td>
+                          
+                            
+                              <pre>&lt;!DOCTYPE html&gt;&lt;html lang=&#34;en&#34;&gt;&lt;head&gt;&lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=utf-8&#34; /&gt;&lt;meta property=&#34;qc:admins&#34; content=&#34;07303643462122363757&#34; /&gt;&lt;meta name=&#34;robots&#34; content=&#34;index, follow&#34; /&gt;&lt;meta name=&#34;keywords&#34; content=&#34; æ°æ¢¦æ³,æ°æ¢¦æ³IT,æ°æ¢¦æ³ITæè²,æ°æ¢¦æ³ITæè²å¹è®­,é¿æ²æ°æ¢¦æ³IT,è½¯ä»¶æµè¯å¹è®­,é¿æ²è½¯ä»¶æµè¯å¹è®­,é¿æ²javaå¹è®­,é¿æ²Pythonå¹è®­,é¿æ²ITå¹è®­,é¿æ²ITå¹è®­æºæ&#34; /&gt;&lt;meta name=&#34;description&#34; content=&#34;æ°æ¢¦æ³ITèä¸æè²ï¼æ¯é¿æ ... OMITTED 57146 CHARACTORS ...</pre>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+                <div style="overflow: auto">
+                
+                
+                <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                </table>
+                
+
+                
+                
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>57658</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>134.21</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>127.819</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+  </table>
+  
+</body>
